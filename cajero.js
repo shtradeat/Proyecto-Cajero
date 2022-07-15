@@ -13,7 +13,7 @@ function entregarDinero()
   dinero = parseInt(t.value); 
     for(var bi of caja)
     {
-      if(dinero > 0)
+      if(dinero > 5)
       {
         div = Math.floor(dinero / bi.valor);
         if( div > bi.cantidad)
@@ -29,7 +29,7 @@ function entregarDinero()
         dinero = dinero - (bi.valor * papeles);
       }  
     }
-    if(dinero > 0)
+    if(dinero > 9)
     {
       resultado.innerHTML = "Soy un cajero pobre y no tengo dinero";
     }
